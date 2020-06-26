@@ -18,13 +18,8 @@
 
 #pragma once
 
-#if defined(MATEKF722MINI)
-#   define TARGET_BOARD_IDENTIFIER "MF7M"
-#   define USBD_PRODUCT_STRING  "MatekF722Mini"
-#else
-#   define TARGET_BOARD_IDENTIFIER "MF7S"
-#   define USBD_PRODUCT_STRING  "MatekF722SE"
-#endif
+#define TARGET_BOARD_IDENTIFIER "AIK7"
+#define USBD_PRODUCT_STRING  "AIKONF7"
 
 #define LED0                    PA14  //Blue   SWCLK
 #define LED1                    PA13  //Green  SWDIO
@@ -66,11 +61,13 @@
 #define I2C1_SCL                PB8
 #define I2C1_SDA                PB9
 
+// External I2C BARO
+
 #define USE_BARO
-#define BARO_I2C_BUS            BUS_I2C1
-#define USE_BARO_BMP280
+#define BARO_I2C_BUS I2C_EXT_BUS
 #define USE_BARO_MS5611
-#define USE_BARO_DPS310
+#define USE_BARO_BMP085
+#define USE_BARO_BMP280
 
 #define USE_MAG
 #define MAG_I2C_BUS             BUS_I2C1
