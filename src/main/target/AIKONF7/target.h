@@ -23,7 +23,7 @@
 
 #define LED0                    PC13
 #define BEEPER                  PC15
-//#define BEEPER_INVERTED
+#define BEEPER_INVERTED
 
 // MPU6000 interrupts
 #define USE_EXTI
@@ -64,7 +64,7 @@
 
 #define USE_UART5
 #define UART5_TX_PIN            PC12
-#define UART5_RX_PIN            PD02
+#define UART5_RX_PIN            PD2
 
 #define USE_I2C
 #define USE_I2C_DEVICE_2
@@ -82,7 +82,7 @@
 
 #define USE_MAG
 #define MAG_I2C_BUS             EXTERNAL_I2C_BUS
-#define USE_MAG_AK8963
+//#define USE_MAG_AK8963
 #define USE_MAG_AK8975
 #define USE_MAG_HMC5883
 #define USE_MAG_QMC5883
@@ -148,6 +148,9 @@
 #define USE_LED_STRIP
 #define WS2811_PIN              PA15
 
+#define USE_DSHOT
+#define USE_SERIALSHOT
+#define USE_ESC_SENSOR
 #define USE_SERIAL_4WAY_BLHELI_INTERFACE
 
 #define ENABLE_BLACKBOX_LOGGING_ON_SPIFLASH_BY_DEFAULT
