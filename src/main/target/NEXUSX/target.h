@@ -147,7 +147,7 @@
 // *************** PINIO ***************************
 #define USE_PINIO
 #define USE_PINIOBOX
-#define PINIO1_PIN                  PC8 // power supply for internal ELRS receiver
+#define PINIO1_PIN                  PC8 // enable pin for internal ELRS receiver
 #define PINIO1_FLAGS				PINIO_FLAGS_INVERTED // turn on by default
 
 #define DEFAULT_FEATURES                (FEATURE_TELEMETRY | FEATURE_VBAT | FEATURE_TX_PROF_SEL)
