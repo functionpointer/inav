@@ -127,7 +127,7 @@
 #define SERIALRX_PROVIDER       SERIALRX_CRSF
 #define SERIALRX_UART           SERIAL_PORT_USART5
 
-#define SENSORS_SET (SENSOR_ACC|SENSOR_MAG|SENSOR_BARO)
+#define SENSORS_SET (SENSOR_ACC|SENSOR_BARO)
 
 // *************** ADC *****************************
 #define USE_ADC
