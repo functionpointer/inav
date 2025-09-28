@@ -73,11 +73,12 @@
 #define SPI2_MISO_PIN           PB14
 #define SPI2_MOSI_PIN           PB15
 
-#define USE_FLASHFS
-#define USE_FLASH_W25N01G // is actually W25N02KVZEIR
-#define W25N01G_SPI_BUS          BUS_SPI2
-#define W25N01G_CS_PIN           PB12
-#define ENABLE_BLACKBOX_LOGGING_ON_SPIFLASH_BY_DEFAULT
+// flash chip W25N02KVZEIR not supported yet
+//#define USE_FLASHFS
+//#define USE_FLASH_W25N02K
+//#define W25N02K_SPI_BUS          BUS_SPI2
+//#define W25N02K_CS_PIN           PB12
+//#define ENABLE_BLACKBOX_LOGGING_ON_SPIFLASH_BY_DEFAULT
 
 // *************** UART *****************************
 #define USE_VCP
@@ -149,7 +150,7 @@
 #define PINIO1_PIN                  PC8 // power supply for internal ELRS receiver
 #define PINIO1_FLAGS				PINIO_FLAGS_INVERTED // turn on by default
 
-#define DEFAULT_FEATURES                (FEATURE_TELEMETRY | FEATURE_VBAT | FEATURE_TX_PROF_SEL | FEATURE_BLACKBOX)
+#define DEFAULT_FEATURES                (FEATURE_TELEMETRY | FEATURE_VBAT | FEATURE_TX_PROF_SEL)
 
 #define USE_SERIAL_4WAY_BLHELI_INTERFACE
 
