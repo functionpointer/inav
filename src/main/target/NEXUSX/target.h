@@ -159,7 +159,12 @@
 #define TARGET_IO_PORTC 0xffff
 #define TARGET_IO_PORTD 0xffff
 
-#define MAX_PWM_OUTPUT_PORTS        8
+#if defined(NEXUSX)
+#define MAX_PWM_OUTPUT_PORTS        7
+#elif defined(NEXUSX_9SERVOS) || defined(NEXUSX_NOI2C)
+#define MAX_PWM_OUTPUT_PORTS        9
+#endif
+
 #define USE_DSHOT
 #define USE_SERIALSHOT
 #define USE_ESC_SENSOR
