@@ -47,7 +47,7 @@
 //#define I2C1_SCL                PB6
 //#define I2C1_SDA                PB7
 
-#if defined(NEXUSX) || defined(NEXUS_9SERVOS)
+#if defined(NEXUSX) || defined(NEXUSX_9SERVOS)
 #define USE_I2C_DEVICE_2 // clashes with UART3
 #define I2C2_SCL                PB10
 #define I2C2_SDA                PB11
